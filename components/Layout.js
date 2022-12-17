@@ -15,10 +15,19 @@ export default function Layout({ children }) {
             <AppBar className={classes.navbar}>
                 <Toolbar>
                     <NextLink href='/' >
-                        <Typography>
-                            Ecomercely
+                        <Typography className={classes.brand}>
+                            ECOMERCELY
                         </Typography>
                     </NextLink>
+                    <div className={classes.grow}></div>
+                    <div>
+                        <NextLink href="/cart">
+                            CART
+                        </NextLink>
+                        <NextLink href="/login">
+                            LOGIN
+                        </NextLink>
+                    </div>
                 </Toolbar>
             </AppBar>
             <Container>
